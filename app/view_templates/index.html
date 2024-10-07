@@ -26,6 +26,13 @@
     </div>
 
     <h5></h5>
+    <div class="m-5">
+        <h3> </> htmx button example</h3>
+        <!-- have a button POST a click via AJAX -->
+        <button hx-post="/clicked" hx-swap="outerHTML" class="btn btn-primary">
+            Click Me
+        </button>
+    </div>
     <!-- Load common CSS and JS -->
     {% include "./partials/dependencies.html" ignore missing with context %}
     <script src="/static/js/browserTime.js"></script>
